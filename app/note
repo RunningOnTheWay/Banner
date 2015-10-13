@@ -1,0 +1,10 @@
+这是一个关于图片轮播的项目
+1.循环：是有100做到的 注意当position=99的时候
+
+2.无限：是在finishUpdate中 注意position=0的时候
+
+3.自动：用的是Timer轻量级 注意在TimerTask中的run中的runOnuithread（要把自动和无限循环的position关联起来）
+
+4.联动：pagecahge监听做到。 5.人为干涉：touch监听做到。
+
+完美解决：当认为干涉完之后，轮播不能从干涉的地方继续轮滑" --
